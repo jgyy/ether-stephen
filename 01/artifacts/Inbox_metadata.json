@@ -1,0 +1,101 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "initialMessage",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "a",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "b",
+						"type": "int256"
+					}
+				],
+				"name": "doMath",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "message",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newMessage",
+						"type": "string"
+					}
+				],
+				"name": "setMessage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"01/ballot.sol": "Inbox"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"01/ballot.sol": {
+			"keccak256": "0xdecac880499784e29025c594854d27dd876711d4d3130c4984f0f7ad0502b9c6",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://21d13a496f0eac1fe92f5a1101d30f88a7464c4141381b9e82b261dd5cc79ae5",
+				"dweb:/ipfs/QmazdqvHK2cYZWCqDdEtTny3S1FPLSWDq57ZPfCFyap4hS"
+			]
+		}
+	},
+	"version": 1
+}
