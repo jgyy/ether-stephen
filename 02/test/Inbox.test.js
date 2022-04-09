@@ -1,10 +1,16 @@
-import ganache from 'ganache-cli';
 import Web3 from 'web3';
+import HDWalletProvider from "@truffle/hdwallet-provider";
+import dotenv from 'dotenv';
 import { ok, strictEqual } from 'assert';
 import { interfaces, bytecode } from '../compile.js';
 import { describe, it, beforeEach } from 'mocha';
 
-const web3 = new Web3(ganache.provider());
+dotenv.config();
+const provider = new HDWalletProvider(
+  process.env.MNEMONIC,
+  process.env.INFURA
+);
+const web3 = new Web3(provider);
 let accounts;
 let inbox;
 
@@ -31,3 +37,5 @@ describe('Inbox', () => {
     strictEqual(message, 'bye');
   });
 });
+
+provider.engine.stop();
